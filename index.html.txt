@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Aamir Azeem - Personal Website</title>
+    <style>
+        /* Apply Inter font if loaded */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Simple animation for sections */
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Aamir Azeem
+            </div>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="bg-indigo-600 text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Hey! I'm [Aamir Azeem]
+            </h1>
+            <p class="text-lg md:text-xl mb-8">
+                [Mechanical Engineer | Creative Thinker | Problem Solver]
+            </p>
+            <a href="#about" class="bg-white text-indigo-600 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300">
+                Learn More About Me
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-white section-fade-in">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto text-center text-lg text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    Hello! I'm [Aamir Azeem], based in [Lucknow, India]. I am passionate about [Mechanical Engineer, Team Handling, Technology].
+                </p>
+                <p class="mb-4">
+                    I worked as a 'Mechanical Engineer' in EMIRATES PRINTING PRESS LLC, DUBAI. I have 5 years of work experience. I'm done my Diploma in Printing Technology and B.Tech in Mechanical Engineering both. My skills are Team Handling, Team Trainer, Self Motivated,IT skills and Designing Skills Expertise.
+                </p>
+                <p>
+                    Feel free for Guidance, Motivation and Knowledge Oriented.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-16 md:py-24 bg-gray-50 section-fade-in">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Portfolio / Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3">Project Title 1 / Skill Area 1</h3>
+                    <p class="text-gray-600 mb-4">
+                        Making a chain sprocket or roller sprocket with the help of CNC in which maintenance cost is quite less.
+                    </p>
+                    </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3">Project Title 2 / Skill Area 2</h3>
+                    <p class="text-gray-600 mb-4">
+                        Graphic Designing
+                    </p>
+                     </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3">Project Title 3 / Skill Area 3</h3>
+                    <p class="text-gray-600 mb-4">
+                        Making & Development of Desktop Publishing with the help of Adobe Illustrator and Adobe InDesign.
+                    </p>
+                     </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-white section-fade-in">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+            <p class="max-w-xl mx-auto text-lg text-gray-700 mb-8">
+                Interested in collaborating or just want to say hi? Feel free to reach out!
+            </p>
+            <div class="space-y-4 md:space-y-0 md:space-x-6">
+                 <a href="mailto:your.email@example.com" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-indigo-700 transition duration-300">
+                    Email Me: aamirazeem85@gmail.com
+                </a>
+                 </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; <span id="current-year"></span> [Aamir Azeem]. All rights reserved.</p>
+            </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Intersection Observer for fade-in animations
+        const sections = document.querySelectorAll('.section-fade-in');
+        const options = {
+            root: null, // relative to document viewport
+            rootMargin: '0px',
+            threshold: 0.1 // trigger when 10% of the section is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('section-visible');
+                    // Optional: Unobserve after animation to save resources
+                    // observer.unobserve(entry.target);
+                }
+                 // Optional: Remove class if scrolling back up, for re-animation
+                 // else {
+                 //     entry.target.classList.remove('section-visible');
+                 // }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
